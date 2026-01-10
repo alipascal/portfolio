@@ -1,0 +1,21 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <logo>https://stephango.com/apple-touch-icon.png</logo>
+  <icon>https://stephango.com/apple-touch-icon.png</icon>
+  <title>Steph Ango</title>
+  <link href="https://stephango.com/feed.xml" rel="self" />
+  <link href="https://stephango.com/" />
+  <updated>2026-01-03T00:32:39+00:00</updated>
+  <id>https://stephango.com</id>
+  <author>
+    <name>Steph Ango</name>
+  </author>
+  <entry>
+    <title>Use the saw, fear the saw</title>
+    <link href="https://stephango.com/saw" />
+    <updated>2025-10-20T00:00:00+00:00</updated>
+    <id>https://stephango.com/Use the saw, fear the saw</id>
+    <content type="html">
+    
+    </content>
+  </entry>
+</feed>

@@ -7,10 +7,12 @@ URL = "https://alipascal.github.io/alicia.tchemo"
 
 
 # Extract html content from every .md file in feed/articles/ folder
-updated_date = datetime.now(UTC).strftime('%a, %d %b %Y %H:%M:%S +0000')
+updated_date = datetime.now(UTC).strftime('%Y-%m-%dT%H:%M:%S+00:00')
 articles = []
-folder = "feed/articles/"
+folder = "articles"
+
 for racine, dirs, fichiers in os.walk(folder):
+
     for f in fichiers:
         path = os.path.join(racine, f)
         with open(path, "r", encoding="utf-8") as input_file:
@@ -21,10 +23,10 @@ for racine, dirs, fichiers in os.walk(folder):
             articles.append({  
                 "filename": filename,
                 "content": html,
-                "title": text.lstrip("# ").strip(),
+                "title": text.splitlines()[0].lstrip("# ").strip(),
                 "published_date": "",
                 "updated_date": updated_date,
-                "url": URL + filename,
+                "url": URL + "/" + filename,
             })
 
 
@@ -34,16 +36,17 @@ my_name = "pascal"
 # Create entries from articles
 entries = [f"""
     <entry>
-        <title>{item.title}</title>
-        <link href="{item.url}" />
-        <id>{item.url}</id>
-        <updated>{item.updated_date}</updated>
-        <published>{item.updated_date}</published>
-        <content type="html">
-            {item.content}
-        </content>
+    <title>{item["title"]}</title>
+    <link href="{item["url"]}" />
+    <id>{item["url"]}</id>
+    <updated>{item["updated_date"]}</updated>
+    <published>{item["published_date"]}</published>
+    <content type="html">
+        {item["content"]}
+    </content>
     </entry>
 """ for item in articles]
+
 
 # Create the RSS
 rss = f"""

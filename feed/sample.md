@@ -1,6 +1,6 @@
 # Sample Note
 
-*2025-10-09*, Alicia TCHEMO, alicia.tchemo@etu.u-paris.fr, 22001717
+*2025-10-09*, Alicia TCHEMO
 
 ---
 

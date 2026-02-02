@@ -1,21 +1,28 @@
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <logo>https://stephango.com/apple-touch-icon.png</logo>
-  <icon>https://stephango.com/apple-touch-icon.png</icon>
-  <title>Steph Ango</title>
-  <link href="https://stephango.com/feed.xml" rel="self" />
-  <link href="https://stephango.com/" />
-  <updated>2026-01-03T00:32:39+00:00</updated>
-  <id>https://stephango.com</id>
-  <author>
-    <name>Steph Ango</name>
-  </author>
-  <entry>
-    <title>Use the saw, fear the saw</title>
-    <link href="https://stephango.com/saw" />
-    <updated>2025-10-20T00:00:00+00:00</updated>
-    <id>https://stephango.com/Use the saw, fear the saw</id>
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <feed xmlns="http://www.w3.org/2005/Atom">
+        <title>pascal</title>
+        <subtitle>Flux RSS/Atom articles de alipascal</subtitle>
+        <link href="https://alipascal.github.io/alicia.tchemo"/>
+        <updated>2026-01-10T03:04:47+00:00</updated>
+        <author>
+            <name>pascal</name>
+        </author>
+        <id>https://alipascal.github.io/alicia.tchemo</id>
+        
+    <entry>
+    <title>Hello World!</title>
+    <link href="https://alipascal.github.io/alicia.tchemo/hello-world" />
+    <id>https://alipascal.github.io/alicia.tchemo/hello-world</id>
+    <updated>2026-01-10T03:04:47+00:00</updated>
+    <published></published>
     <content type="html">
-    
+        <h1>Hello World!</h1>
+<p>hey! i'm pascal. i'm a little bit lost today.
+i'm a bit interested in philosophy these days, and i'm trying to be a good person everyday.</p>
+<p>it is hard to describe your own self as a person who is intuitivly difine as <em>lost</em>.
+but i can show you an abstract version of what i look like :</p>
     </content>
-  </entry>
-</feed>
+    </entry>
+
+    </feed>

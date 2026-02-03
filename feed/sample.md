@@ -1,9 +1,5 @@
 # Sample Note
 
-*2025-10-09*, Alicia TCHEMO, alicia.tchemo@etu.u-paris.fr, 22001717
-
----
-
 Pour des soucis de praticité et de ressources disponibles (je n'ai plus d'espace dans mon ordinateur😓), je crée un environnement virtuel nativement avec python, sans installer *anaconda* : 
 
 

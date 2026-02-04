@@ -11,10 +11,12 @@
     
     <title>alicia tchemo's portfolio</title>
 
-    <link rel="icon" href="images/cow.ico" type="image/x-icon" />
+    <link rel="icon" href="cow.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+
+    <script src="js/darkmode.js"></script>
   </head>
 
   <body>
@@ -30,8 +32,8 @@
 
     <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="index.html" class="active">about me</a></li>
-            <li><a href="projects.html">projects</a></li>
+            <li><a href="/">about me</a></li>
+            <li><a href="projects.html" class="active">projects</a></li>
             <!-- TODO <li><a href="influenceur.html">philosophie</a></li> -->
             <li><a href="thingsthatilike.html">things that i like</a></li>
         </ul>
@@ -40,7 +42,85 @@
     <hr/>
 
     <content>
-      <p>en construction ⚙️</p>
+      <!-- WORK -->
+      <h2>work</h2>
+
+      <div class="project">
+        <div class="project-header">
+          <span class="project-title">Data Analyst / Assistant Data Architect</span>, 
+          <span class="project-type">stage</span>, 
+          <span class="project-company">Afriland First Bank, DRI</span>, 
+          <span class="project-date">juillet – septembre 2025</span>
+        </div>
+        <p class="project-description">Nettoyage de données bancaires et création de dashboards PowerBI pour la direction</p>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <span class="project-title">FullStack Developer / Assistant Data Analyst</span>, 
+          <span class="project-type">stage</span>, 
+          <span class="project-company">EDF, DevCo</span>, 
+          <span class="project-date">mai – août 2024</span>
+        </div>
+        <p class="project-description">Développement d'un site web interne centralisant les dashboards de l'équipe data</p>
+      </div>
+
+      <!-- PROJECTS -->
+      <h2>my projects</h2>
+
+      <div class="project">
+        <div class="project-header">
+          <span class="project-title">Social Media Real-Time Stream Sentiment Analysis</span>, 
+          <span class="project-type">projet universitaire</span>, 
+          <span class="project-date">décembre 2025</span>
+        </div>
+        <p class="project-description">Pipeline de streaming temps réel pour analyse de sentiments sur tweets avec Spark</p>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <a href="https://github.com/alipascal/extract-rdf-from-text" class="project-title">Extraction RDF depuis texte brut</a>, 
+          <span class="project-type">projet universitaire</span>, 
+          <span class="project-date">décembre 2025</span>
+        </div>
+        <p class="project-description">Extraction d'entités triplets et transformation en graphe RDF</p>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <a href="https://github.com/alipascal/neural-networks-perceptron" class="project-title">Visualisation de l'apprentissage d'un Perceptron</a>, 
+          <span class="project-type">projet universitaire</span>, 
+          <span class="project-date">mars 2025</span>
+        </div>
+        <p class="project-description">Implémentation from scratch d'un perceptron avec visualisations graphiques</p>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <a href="https://github.com/alipascal/projetdatalog" class="project-title">Évaluateur Datalog</a>, 
+          <span class="project-type">projet universitaire</span>, 
+          <span class="project-date">mai 2025</span>
+        </div>
+        <p class="project-description">Évaluateur de programmes Datalog avec algorithme naïf et semi-naïf</p>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <span class="project-title">Chatbot Super Prompt</span>, 
+          <span class="project-type">projet universitaire</span>, 
+          <span class="project-date">avril 2024</span>
+        </div>
+        <p class="project-description">Chatbot intelligent avec multiples API LLMs et enrichissement de prompts par RAG</p>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <span class="project-title">Japanese AI Convo</span>, 
+          <span class="project-type">projet personnel</span>, 
+          <span class="project-date">février 2024</span>
+        </div>
+        <p class="project-description">Interface ChatBot avec API OpenAI pour l'apprentissage du japonais</p>
+      </div>
     </content>
 
     <footer>

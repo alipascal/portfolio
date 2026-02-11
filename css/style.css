@@ -28,7 +28,7 @@
 
 body {
   font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-   font-size: 1.1rem;
+  font-size: 1.1rem;
   color: var(--text-color);
   line-height: 1.6;
   max-width: 650px;
@@ -126,6 +126,11 @@ code {
   padding: .1rem .3rem .2rem;
   border-radius: .2rem;
   font-size: 0.9em;
+}
+
+block{
+  font-style: italic;
+  font-size: 0.8em;
 }
 
 /* HR */
@@ -331,13 +336,24 @@ input:checked + .slider:hover:before {
 ✓ liste des projets
 
 
+- mettre les projets en anglais
+
 - dark light mode (mettre à jour l'animation du bouton en fonction du 'theme' saved dans localStorage)
 
+
+- dasign tout court (
 ~ font
-- dasign des listes de projets
-- dasign tout court
+- couleur code
+- couleur links
+- couleur lien (see )
+)
+
+
+✓ dasign des listes de projets
+
 
 plus tard
+- faire une version fr ??
 - set up pour les articles
 */
 

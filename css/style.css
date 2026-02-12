@@ -5,11 +5,11 @@
   --card-bg: #EBEBEB;
   --card-hover: #EBEBEB90;
   --border-color: #ddd;
-  --link-color: #BF7301;
+  --link-color: #CC0000;
   --nav-text-accent-color: #404040; /* gray */ 
   --nav-text-color: #808080; /* lightgray */
-  --code-bg: #31ACC530;
-  --code-text-color: #31ACC5
+  --code-bg: #9A9A9A20;
+  --code-text-color: #1a1a1a95
 }
 
 [data-theme="dark"] {
@@ -19,12 +19,18 @@
   --card-bg: #2d2d2d;
   --card-hover: #3d3d3d;
   --border-color: #444;
-  --link-color: #BF7301;
+  --link-color: #CC0000B0;
   --nav-text-accent-color: #bebebe;
   --nav-text-color: #808080; /* lightgray */
+  --code-bg: #9A9A9A20;
+  --code-text-color: #e4e4e495
+}
+
+/*
   --code-bg: #31ACC520;
   --code-text-color: #31ACC5
-}
+*/
+
 
 body {
   font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -128,9 +134,12 @@ code {
   font-size: 0.9em;
 }
 
-block{
+code.classic{
+  font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: italic;
-  font-size: 0.8em;
+  padding: .1rem .3rem .2rem;
+  border-radius: .2rem;
+  font-size: 0.9em;
 }
 
 /* HR */
@@ -239,11 +248,11 @@ header {
 }
 
 .slider:hover {
-  border-color: #ffa500;
+  border-color:  var(--link-color);
 }
 
 .slider:hover:before {
-  background-color: #ffa500;
+  background-color:  var(--link-color);
 }
 
 input:checked + .slider {
@@ -251,7 +260,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:hover {
-  border-color: #ffa500;
+  border-color:  var(--link-color);
 }
 
 input:focus + .slider {
@@ -259,7 +268,7 @@ input:focus + .slider {
 }
 
 input:focus + .slider:hover {
-  box-shadow: 0 0 1px #ffa500;
+  box-shadow: 0 0 1px var(--link-color);;
 }
 
 input:checked + .slider:before {
@@ -278,7 +287,7 @@ input:checked + .slider:before {
 }
 
 input:checked + .slider:hover:before {
-  background-color: #ffa500;
+  background-color: var(--link-color);
 }
 
 /* Projects */

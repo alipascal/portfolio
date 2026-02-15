@@ -2,14 +2,14 @@
   --bg-color: #ffffff;
   --text-color: #1a1a1a;
   --text-secondary: #444;
-  --card-bg: #EBEBEB;
+  --card-bg: #EBEBEBFF;
   --card-hover: #EBEBEB90;
   --border-color: #ddd;
-  --link-color: #BF7301;
-  --nav-text-accent-color: grey;
-  --nav-text-color: grey; /* lightgrey */
-  --code-bg: #31ACC530;
-  --code-text-color: #31ACC5
+  --link-color: #CC0000; /* red */
+  --nav-text-accent-color: #404040; /* gray */ 
+  --nav-text-color: #808080; /* lightgray */
+  --code-bg: #9A9A9A20;
+  --code-text-color: #1a1a1a95
 }
 
 [data-theme="dark"] {
@@ -19,15 +19,22 @@
   --card-bg: #2d2d2d;
   --card-hover: #3d3d3d;
   --border-color: #444;
-  --link-color: #BF7301;
-  --nav-text-accent-color: grey;
-  --nav-text-color: grey; /* lightgrey */
-  --code-bg: #31ACC520;
-  --code-text-color: #31ACC5
+  --link-color: #CC3F3F; /* red */
+  --nav-text-accent-color: #bebebe;
+  --nav-text-color: #808080; /* lightgray */
+  --code-bg: #9A9A9A20;
+  --code-text-color: #e4e4e495
 }
 
+/*
+  --code-bg: #31ACC520;
+  --code-text-color: #31ACC5
+*/
+
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.1rem;
   color: var(--text-color);
   line-height: 1.6;
   max-width: 650px;
@@ -38,6 +45,7 @@ body {
 }
 
 /* Titres */
+
 h1 {
   font-size: 2rem;
   font-weight: 600;
@@ -45,10 +53,14 @@ h1 {
   color: var(--text-color);
 }
 
+h2 {
+  margin-top: 4rem;
+}
+
 h4 {
   font-size: 1.25rem;
   font-weight: 500;
-  margin: 2rem 0 1rem;
+  margin: 3rem 0 1rem;
   color: var(--text-color);
 }
 
@@ -122,6 +134,14 @@ code {
   font-size: 0.9em;
 }
 
+code.classic{
+  font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-style: italic;
+  padding: .1rem .3rem .2rem;
+  border-radius: .2rem;
+  font-size: 0.9em;
+}
+
 /* HR */
 hr {
   border: none;
@@ -143,7 +163,18 @@ header {
   justify-content: flex-end;
 }
 
+.icon{
+/*  vertical-align: text-bottom;*/
+/*  vertical-align: middle; */
+  vertical-align: baseline; 
+  color: var(--code-text-color);
+  width: 1em;  /* s'adapte à la taille du texte */
+  height: 1em;
+}
+
+
 /* Nav bar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -226,11 +257,11 @@ header {
 }
 
 .slider:hover {
-  border-color: #ffa500;
+  border-color:  var(--link-color);
 }
 
 .slider:hover:before {
-  background-color: #ffa500;
+  background-color:  var(--link-color);
 }
 
 input:checked + .slider {
@@ -238,7 +269,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:hover {
-  border-color: #ffa500;
+  border-color:  var(--link-color);
 }
 
 input:focus + .slider {
@@ -246,7 +277,7 @@ input:focus + .slider {
 }
 
 input:focus + .slider:hover {
-  box-shadow: 0 0 1px #ffa500;
+  box-shadow: 0 0 1px var(--link-color);;
 }
 
 input:checked + .slider:before {
@@ -265,7 +296,41 @@ input:checked + .slider:before {
 }
 
 input:checked + .slider:hover:before {
-  background-color: #ffa500;
+  background-color: var(--link-color);
+}
+
+/* Projects */
+.project {
+  margin-bottom: 2rem;
+}
+
+.project-header {
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.project-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.project-title a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-color); /*marche pas*/
+}
+
+.project-date {
+  font-style: italic;
+  color: var(--text-color);
+}
+
+.project-description {
+  color: var(--text-color);
+  opacity: 0.7;
+/*  font-size: 16px;*/
+  margin-top: -0.5rem;
+  line-height: 1.5;
 }
 
 /* TODO list
@@ -276,15 +341,40 @@ input:checked + .slider:hover:before {
 ✓ h5
 ✓ dark light mode
 
-publier le site
-changer nom de la branch en master
+✓ publier le site
+✓ changer nom de la branch en master
 
-changer nom repo
+✓ changer nom repo
 
-.active nav bar
-font
+✓ add localisation
 
-liste des projets
+✓ bug nav bar
+✓ .active nav bar
 
-set up pour les articles
+✓ liste des projets
+
+
+- mettre les projets en anglais
+
+- dark light mode (mettre à jour l'animation du bouton en fonction du 'theme' saved dans localStorage)
+
+
+- dasign tout court (
+~ font
+- couleur code
+- couleur links
+- couleur lien (see )
+)
+
+
+✓ dasign des listes de projets
+
+
+plus tard
+- faire une version fr ??
+- set up pour les articles
+*/
+
+/*
+ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji
 */

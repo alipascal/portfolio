@@ -328,53 +328,20 @@ input:checked + .slider:hover:before {
 .project-description {
   color: var(--text-color);
   opacity: 0.7;
-/*  font-size: 16px;*/
   margin-top: -0.5rem;
   line-height: 1.5;
 }
 
 /* TODO list
-✓ footer and margin
-✓ nav bar
-✓ code esthétique
-✓ h6
-✓ h5
-✓ dark light mode
-
-✓ publier le site
-✓ changer nom de la branch en master
-
-✓ changer nom repo
-
-✓ add localisation
-
-✓ bug nav bar
-✓ .active nav bar
-
-✓ liste des projets
-
-
-- mettre les projets en anglais
-
-- dark light mode (mettre à jour l'animation du bouton en fonction du 'theme' saved dans localStorage)
-
-
-- dasign tout court (
-~ font
-- couleur code
-- couleur links
-- couleur lien (see )
-)
-
-
-✓ dasign des listes de projets
-
 
 plus tard
+- faire une version téléphone (
+  - bug nav bar
+  - font en plus petit
+  - bordure/margin plus petite
+  )
+- mettre les projets en anglais
 - faire une version fr ??
 - set up pour les articles
-*/
 
-/*
-ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji
 */

@@ -2,10 +2,10 @@
   --bg-color: #ffffff;
   --text-color: #1a1a1a;
   --text-secondary: #444;
-  --card-bg: #EBEBEB;
+  --card-bg: #EBEBEBFF;
   --card-hover: #EBEBEB90;
   --border-color: #ddd;
-  --link-color: #CC0000;
+  --link-color: #CC0000; /* red */
   --nav-text-accent-color: #404040; /* gray */ 
   --nav-text-color: #808080; /* lightgray */
   --code-bg: #9A9A9A20;
@@ -19,7 +19,7 @@
   --card-bg: #2d2d2d;
   --card-hover: #3d3d3d;
   --border-color: #444;
-  --link-color: #CC0000B0;
+  --link-color: #CC3F3F; /* red */
   --nav-text-accent-color: #bebebe;
   --nav-text-color: #808080; /* lightgray */
   --code-bg: #9A9A9A20;
@@ -161,6 +161,15 @@ header {
   margin-bottom: 1rem; 
   display: flex;
   justify-content: flex-end;
+}
+
+.icon{
+/*  vertical-align: text-bottom;*/
+/*  vertical-align: middle; */
+  vertical-align: baseline; 
+  color: var(--code-text-color);
+  width: 1em;  /* s'adapte à la taille du texte */
+  height: 1em;
 }
 
 

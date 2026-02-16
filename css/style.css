@@ -26,11 +26,6 @@
   --code-text-color: #e4e4e495
 }
 
-/*
-  --code-bg: #31ACC520;
-  --code-text-color: #31ACC5
-*/
-
 
 body {
   font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -131,7 +126,7 @@ code {
   color: var(--code-text-color);
   padding: .1rem .3rem .2rem;
   border-radius: .2rem;
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 
 code.classic{
@@ -332,16 +327,39 @@ input:checked + .slider:hover:before {
   line-height: 1.5;
 }
 
+/* version mobile */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+    padding: 0.75rem 1.2rem;
+  }
+
+  .nav-links {
+    gap: 0.7rem;
+  }
+
+  .nav-links a {
+    padding: .2rem 0.6rem .3rem;
+    font-size: 0.85rem;
+  }
+
+  footer {
+    margin-top: 5rem;
+  }
+}
+
 /* TODO list
 
-plus tard
-- faire une version téléphone (
-  - bug nav bar
-  - font en plus petit
-  - bordure/margin plus petite
-  )
+- changer de version style?v=3.css
+
+langues:
 - mettre les projets en anglais
 - faire une version fr ??
-- set up pour les articles
+
+
+plus tard
+- feed rss: set up pour les articles
+- setup Hugo ??
+- setup Github Action css versionning ??
 
 */
